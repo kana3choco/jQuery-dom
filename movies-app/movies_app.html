@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css">
+    <title>Movies App</title>
+</head>
+<body>
+    <div id="top">
+        <h2>Movies & rating</h2>
+        <form id="new-movie-form">
+            <div class="form">
+                <label>title</label>
+                <input type="text" required id="title">
+            </div>
+            <div class="form">
+                <label>rating</label>
+                <input type="number" required id="rating" min="0" max="10">
+            </div>
+            <div class="form">
+                <button type="submit">submit</button>
+            </div>
+        </form>
+    </div>
+
+    <br>
+    <div id="table">
+        <table class="table">
+            <thead class="thead">
+                <tr>
+                    <th scope="col">Title <i id="title" class="fa fa-sort-down"></i></th>
+
+                    <th scope="col">Rating <i id="rating" class="fa fa-sort-down"></i></th>
+                    <th scope="col">Delete </th>
+                </tr>
+            </thead>
+            <tbody id="movie-table-body">
+      
+            </tbody>
+        </table>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="movies_app.js"></script>
+</body>
+</html>
